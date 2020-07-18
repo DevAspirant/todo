@@ -1,0 +1,4 @@
+django==3.0.7
+whitenoise
+gunicorn
+Pillow==7.1.2
