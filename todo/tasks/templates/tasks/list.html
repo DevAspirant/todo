@@ -3,8 +3,15 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
         body{
             background-color: #F2F2F2;
+        }
+
+        .name{
+            font-family: 'Reem Kufi', sans-serif;
+            text-align: center;
+            font-size: 40px;
         }
         input {
             width: 100%;
@@ -40,15 +47,20 @@
             background-color: #ffae19;
             border-color: #e59400;
         }
+
+        
     </style>
 </head>
 <body>
 <div class="center-column">
-<h3>عينة</h3>
+<h3 class='name'>عينة</h3>
+<div class='container'>
+    <h3></h3>
+</div>
 <form method="POST" action="/">
     {% csrf_token %}
     {{form.title}}
-    <input class="btn btn-info" type="submit" name="Create a task">
+    <input class="btn btn-info" type="submit" value='نساعدك في ? ' name="createList">
 </form>
 <div class="todo-list">
 {% for task in tasks %}
