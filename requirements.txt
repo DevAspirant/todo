@@ -1,4 +1,5 @@
 django==3.0.7
 whitenoise
-gunicorn
+gunicorn==20.0.4
+whitenoise==5.1.0
 Pillow==7.1.2
